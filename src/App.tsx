@@ -1,37 +1,19 @@
+import { ThemeProvider, Global } from '@emotion/react'
+import { theme } from './styles/theme'
+import { globalStyles } from './styles/globalStyles'
 import Nav from './components/Nav'
-import EntryItem from './components/EntryItem'
 import Footer from './components/Footer'
+import Home from './pages/Home'
 
 const App = () => {
   return (
     <>
-      <Nav />
-      <div className="weather">
-        <span>{'☼'}</span>
-        <p>
-          Today’s Weather: <span>{'Sunny'}</span>
-        </p>
-      </div>
-      <header className="home-hero">
-        <h1>Bite Me: A Daily Dose of Vegan</h1>
-        <p>
-          Join me as I munch my way through 365+ days of plant-based
-          deliciousness. Expect questionable puns, unexpected recipes, and a
-          whole lot of leafy greens.
-        </p>
-      </header>
-      <main>
-        <header>
-          <h1>Lettuce Begin!</h1>
-          <p>Check out my daily vegan recipes.</p>
-        </header>
-        <ul className="entry-list">
-          <EntryItem />
-          <EntryItem />
-          <EntryItem />
-        </ul>
-      </main>
-      <Footer />
+      <ThemeProvider theme={theme}>
+        <Global styles={globalStyles(theme)} />
+        <Nav />
+        <Home />
+        <Footer />
+      </ThemeProvider>
     </>
   )
 }
