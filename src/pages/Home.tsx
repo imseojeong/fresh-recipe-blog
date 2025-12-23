@@ -1,17 +1,20 @@
 import EntryItem from '../components/EntryItem'
 import Weather from '../components/Weather'
+import { StyledHome } from './Home.styles'
 
 const Home = () => {
   return (
-    <>
+    <StyledHome>
       <Weather />
       <header className="home-hero">
-        <h1>Bite Me: A Daily Dose of Vegan</h1>
-        <p>
-          Join me as I munch my way through 365+ days of plant-based
-          deliciousness. Expect questionable puns, unexpected recipes, and a
-          whole lot of leafy greens.
-        </p>
+        <div className="hero-information">
+          <h1>Bite Me: A Daily Dose of Vegan</h1>
+          <p>
+            Join me as I munch my way through 365+ days of plant-based
+            deliciousness. Expect questionable puns, unexpected recipes, and a
+            whole lot of leafy greens.
+          </p>
+        </div>
       </header>
       <main>
         <header>
@@ -24,7 +27,7 @@ const Home = () => {
           <EntryItem />
         </ul>
       </main>
-    </>
+    </StyledHome>
   )
 }
 
