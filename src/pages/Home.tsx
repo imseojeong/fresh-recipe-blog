@@ -18,7 +18,7 @@ const Home = () => {
       </header>
       <main>
         <header>
-          <h1>Lettuce Begin!</h1>
+          <h2>Lettuce Begin!</h2>
           <p>Check out my daily vegan recipes.</p>
         </header>
         <ul className="entry-list">

@@ -5,6 +5,7 @@ import { media } from '../styles/utils/media'
 import bgImage from '../assets/images/home-hero.png'
 
 export const StyledHome = styled.div`
+  /* hero */
   .home-hero {
     position: relative;
     display: flex;
@@ -43,6 +44,24 @@ export const StyledHome = styled.div`
       p {
         ${theme.textStyles.caption};
         color: ${theme.colorStyles.text.body2};
+      }
+    }
+  }
+  /* main */
+  main {
+    /* header */
+    header {
+      padding: 150px 10px;
+      text-align: center;
+      border-bottom: 1px solid ${theme.colorStyles.dividers.divider1};
+      h2 {
+        margin-bottom: 30px;
+        ${theme.textStyles.heading2};
+        color: ${theme.colorStyles.text.headline2};
+      }
+      p {
+        ${theme.textStyles.paragraph1};
+        color: ${theme.colorStyles.text.body1};
       }
     }
   }
