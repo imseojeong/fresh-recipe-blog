@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
-import { css } from '@emotion/react'
 import { theme } from '../styles/theme'
+import { css } from '@emotion/react'
 import { media } from '../styles/utils/media'
 
 export const StyledNav = styled.nav`
@@ -11,9 +11,6 @@ export const StyledNav = styled.nav`
   background-color: ${theme.colorStyles.background.main};
   border-bottom: 1px solid ${theme.colorStyles.dividers.divider1};
   ${theme.textStyles.paragraph2};
-  ${media.md(css`
-    /* background-color: ${theme.colorStyles.text.body1}; */
-  `)(theme)}
 
   .home a,
   .ingredient-info,

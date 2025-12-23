@@ -17,6 +17,9 @@ export const globalStyles = (theme: Theme) => css`
     ${theme.textStyles.paragraph1};
     color: ${theme.colorStyles.text.body1};
     background-color: ${theme.colorStyles.background.main};
+    border: 1px solid ${theme.colorStyles.dividers.divider1};
+    border-top: 0;
+    border-bottom: 0;
   }
 
   h1 {

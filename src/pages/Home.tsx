@@ -1,14 +1,10 @@
 import EntryItem from '../components/EntryItem'
+import Weather from '../components/Weather'
 
 const Home = () => {
   return (
     <>
-      <div className="weather">
-        <span>{'☼'}</span>
-        <p>
-          Today’s Weather: <span>{'Sunny'}</span>
-        </p>
-      </div>
+      <Weather />
       <header className="home-hero">
         <h1>Bite Me: A Daily Dose of Vegan</h1>
         <p>
