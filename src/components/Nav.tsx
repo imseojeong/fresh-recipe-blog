@@ -1,15 +1,22 @@
+import { StyledNav } from './Nav.styles'
+
 const Nav = () => {
   return (
-    <nav>
-      <h1>
-        <a href="/">Home :)</a>
+    <StyledNav>
+      <h1 className="home">
+        <a href="/">
+          <span>Home</span> :)
+        </a>
       </h1>
-      <p>
-        <span>Today’s Ingredient: {'Swiss Chard'}</span>
-        <span>Day {263}</span>
+      <p className="ingredient-info ">
+        <span className="todays">Today’s Ingredient:&nbsp;</span>
+        <span className="ingredient">{'Swiss Chard'}</span>
+        <span className="day-count">Day {263}</span>
       </p>
-      <a href="/about">About Me</a>
-    </nav>
+      <a href="/about" className="about">
+        About Me
+      </a>
+    </StyledNav>
   )
 }
 

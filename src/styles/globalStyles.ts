@@ -4,7 +4,8 @@ import type { Theme } from '@emotion/react'
 export const globalStyles = (theme: Theme) => css`
   * {
     margin: 0;
-    ${theme.textStyles.paragraph1};
+    font-size: inherit;
+    font-weight: inherit;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
