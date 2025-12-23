@@ -28,7 +28,7 @@ export const StyledNav = styled.nav`
       border-right: 0;
     `)(theme)}
   }
-  .home a:hover span,
+  .home a:hover,
   .about:hover {
     text-decoration: underline;
   }
