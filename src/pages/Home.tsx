@@ -1,6 +1,7 @@
 import EntryItem from '../components/EntryItem'
 import Weather from '../components/Weather'
 import { StyledHome } from './Home.styles'
+import entryData from '../data/entries.json'
 
 const Home = () => {
   return (
@@ -22,9 +23,9 @@ const Home = () => {
           <p>Check out my daily vegan recipes.</p>
         </header>
         <ul className="entry-list">
-          <EntryItem />
-          <EntryItem />
-          <EntryItem />
+          {entryData.entries.map((entry) => (
+            <EntryItem key={entry.id} entry={entry} />
+          ))}
         </ul>
       </main>
     </StyledHome>
