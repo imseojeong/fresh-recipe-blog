@@ -9,7 +9,8 @@ export const StyledNav = styled.nav`
   align-items: center;
   padding: 0 12px;
   background-color: ${theme.colorStyles.background.main};
-  border-bottom: 1px solid ${theme.colorStyles.dividers.divider1};
+  border: 1px solid ${theme.colorStyles.dividers.divider1};
+  border-top: 0;
   ${theme.textStyles.paragraph2};
 
   .home a,

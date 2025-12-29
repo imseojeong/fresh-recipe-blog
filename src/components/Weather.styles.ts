@@ -8,7 +8,8 @@ export const StyledWeather = styled.div`
   justify-content: center;
   align-items: center;
   height: 33px;
-  border-bottom: 1px solid ${theme.colorStyles.dividers.divider1};
+  border: 1px solid ${theme.colorStyles.dividers.divider1};
+  border-top: 0;
   ${theme.textStyles.paragraph2};
   ${media.md(css`
     height: 42px;

@@ -16,8 +16,8 @@ export const StyledHome = styled.div`
     background-image: url(${bgImage});
     background-size: cover;
     background-position: center;
-    border-bottom: 1px solid ${theme.colorStyles.dividers.divider1};
-
+    border: 1px solid ${theme.colorStyles.dividers.divider1};
+    border-top: 0;
     &::before {
       /* 5% 투명도의 검정색 오버레이*/
       content: '';
@@ -53,7 +53,8 @@ export const StyledHome = styled.div`
     header {
       padding: 150px 10px;
       text-align: center;
-      border-bottom: 1px solid ${theme.colorStyles.dividers.divider1};
+      border: 1px solid ${theme.colorStyles.dividers.divider1};
+      border-top: 0;
       h2 {
         margin-bottom: 30px;
         ${theme.textStyles.heading2};
@@ -70,6 +71,9 @@ export const StyledHome = styled.div`
   .entry-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    border: 1px solid ${theme.colorStyles.dividers.divider1};
+    border-top: 0;
+    border-bottom: 0;
     ${media.md(css`
       grid-template-columns: repeat(2, 1fr);
     `)(theme)}
