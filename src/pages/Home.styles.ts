@@ -65,4 +65,16 @@ export const StyledHome = styled.div`
       }
     }
   }
+
+  /* entry list */
+  .entry-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    ${media.md(css`
+      grid-template-columns: repeat(2, 1fr);
+    `)(theme)}
+    ${media.lg(css`
+      grid-template-columns: repeat(3, 1fr);
+    `)(theme)}
+  }
 `
