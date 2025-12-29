@@ -1,4 +1,4 @@
-import { StyledEntryItem } from './EntryItem.syles'
+import { StyledEntryItem } from './EntryItem.styles'
 import { Link } from 'react-router-dom'
 import downArrow from '../assets/icons/down-arrow.svg'
 
