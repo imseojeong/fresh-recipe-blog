@@ -25,6 +25,11 @@ export const StyledEntryItem = styled.li`
     padding: 45px 12px 40px;
     ${theme.textStyles.paragraphLarge};
     color: ${theme.colorStyles.text.body1};
+    background-color: ${theme.colorStyles.background.main};
+    transition: background-color 300ms ease;
+    &:hover {
+      background-color: ${theme.colorStyles.background.secondary};
+    }
 
     .entry-item-container {
       display: flex;
