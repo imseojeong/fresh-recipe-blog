@@ -1,5 +1,6 @@
-import downArrow from '../assets/icons/down-arrow.svg'
 import { StyledEntryItem } from './EntryItem.syles'
+import { Link } from 'react-router-dom'
+import downArrow from '../assets/icons/down-arrow.svg'
 
 interface Entry {
   id: string
@@ -9,7 +10,7 @@ interface Entry {
 const EntryItem = ({ entry }: { entry: Entry }) => {
   return (
     <StyledEntryItem>
-      <a href="/">
+      <Link to={`/entry/${entry.id}`}>
         <div className="entry-item-container">
           <div className="folios">
             <span>Entry</span>
@@ -25,7 +26,7 @@ const EntryItem = ({ entry }: { entry: Entry }) => {
             <img src={downArrow} alt="Down Arrow" />
           </button>
         </div>
-      </a>
+      </Link>
     </StyledEntryItem>
   )
 }
